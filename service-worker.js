@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/starwars-finder/precache-manifest.f17a63679018eb1e83cc27d3ae6102e9.js"
+  "/starwars-finder/precache-manifest.e6cacab7e65453f74c850e0d8d85232f.js"
 );
 
 workbox.clientsClaim();
