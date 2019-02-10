@@ -10,7 +10,7 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Route exact path="/" component={SearchCharacters} />
-          <Route path="/character-info/:id" component={CharacterInfo} />
+          <Route exact path="/character-info/:id" component={CharacterInfo} />
         </div>
       </Router>
     );
