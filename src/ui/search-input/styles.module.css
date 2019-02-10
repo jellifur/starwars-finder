@@ -20,6 +20,9 @@ input:focus {
   border: none;
   width: 45px; height: 41px;
   cursor: pointer;
+  background: #000000 url("./search.svg") no-repeat left top;
+  background-size: 30px 30px;
+  background-position: center; 
 }
 
 .searchBtn:focus {

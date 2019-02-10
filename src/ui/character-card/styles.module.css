@@ -1,5 +1,5 @@
 .characterCard {
-  background: #045b9b url("/assets/person.svg") no-repeat left top;
+  background: #045b9b url("./person.svg") no-repeat left top;
   background-size: 160px 160px;
   width: 160px; height: 160px;
   cursor: pointer;

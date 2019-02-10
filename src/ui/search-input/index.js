@@ -10,10 +10,7 @@ class SearchInput extends Component {
     return (
       <form className={styles.searchInput}>
         <input type="text" onChange={onChange} value={value} />
-        <button type="submit" className={styles.searchBtn} onClick={onSubmit}>
-          {/* TODO: Use an icon library and remove img src*/}
-          <img src="/assets/search.svg" alt="Search"/>
-        </button>
+        <button type="submit" className={styles.searchBtn} onClick={onSubmit}></button>
       </form>
     );
   }
