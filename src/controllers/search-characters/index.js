@@ -47,6 +47,11 @@ class SearchCharacters extends Component {
       });
   }
 
+  /* HACK: The results doesn't seem to provide the character ID, but it is part of the URL.
+     This function extracts the number.
+  */
+  getCharId = url => url.match(/\d+/);
+
   render() {
     const { searchValue, characters, prevUrl, nextUrl } = this.state;
 
@@ -70,9 +75,10 @@ class SearchCharacters extends Component {
             </div>
 
             <div className={styles.characters}>
-              {characters.map(char => 
-                <CharacterCard name={char.name} key={char.url}/>
-              )}
+              {characters.map(char => {
+                const id = this.getCharId(char.url).toString();
+                return <CharacterCard name={char.name} key={id} charId={id}/>;
+              })}
             </div>
 
             <div className={styles.navBtns}>

@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 import styles from './styles.module.css';
 
 class CharacterCard extends Component {
   render() {
-    const { name, onClick, imageUrl } = this.props;
+    const { name, imageUrl, charId } = this.props;
 
     return (
-      <div className={styles.characterCard}>
-        {imageUrl && imageUrl.length > 0 && <img className={styles.charImage} src={imageUrl}/>}
-        {name && name.length > 0 && <div className={styles.labelContainer}><div className={styles.label}>{name}</div></div>}
-      </div>
+      <Link to={`/character-info/${charId}`}>
+        <div className={styles.characterCard}>
+          {imageUrl && imageUrl.length > 0 && <img className={styles.charImage} src={imageUrl} alt="star wars character"/>}
+          {name && name.length > 0 && <div className={styles.labelContainer}><div className={styles.label}>{name}</div></div>}
+        </div>
+      </Link>
     );
   }
 }
 
 CharacterCard.propTypes = {
   name: PropTypes.string,
-  onClick: PropTypes.func,
+  charId: PropTypes.string,
   imageUrl: PropTypes.string /* TODO: Pass in image URL to display image of characters */
 };
 
 CharacterCard.defaultProps = {
   name: '',
-  onClick: () => undefined
+  charId: ''
 };
 
 export default CharacterCard;
