@@ -9,7 +9,7 @@ class CharacterCard extends Component {
     const { name, imageUrl, charId } = this.props;
 
     return (
-      <Link to={`/character-info/${charId}`}>
+      <Link to={`${process.env.PUBLIC_URL}/character-info/${charId}`}>
         <div className={styles.characterCard}>
           {imageUrl && imageUrl.length > 0 && <img className={styles.charImage} src={imageUrl} alt="star wars character"/>}
           {name && name.length > 0 && <div className={styles.labelContainer}><div className={styles.label}>{name}</div></div>}

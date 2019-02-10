@@ -7,10 +7,10 @@ import SearchCharacters from 'controllers/search-characters/index.js';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
-          <Route exact path={`${process.env.PUBLIC_URL}/`} component={SearchCharacters} />
-          <Route path={`${process.env.PUBLIC_URL}/character-info/:id`} component={CharacterInfo} />
+          <Route exact path="/" component={SearchCharacters} />
+          <Route path="/character-info/:id" component={CharacterInfo} />
         </div>
       </Router>
     );
