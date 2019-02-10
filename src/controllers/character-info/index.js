@@ -12,6 +12,7 @@ class CharacterInfo extends Component {
     eyeColor: '', 
     birthYear: '', 
     gender: '', 
+    canRender: false
   }
 
   componentDidMount() {
@@ -33,23 +34,29 @@ class CharacterInfo extends Component {
           eyeColor: res.eye_color, 
           birthYear: res.birth_year, 
           gender: res.gender, 
+          canRender: true
          })
       });
   }
 
   render() {
-    const { name, height, mass, hairColor, skinColor, eyeColor, birthYear, gender } = this.state;
+    const { canRender, name, height, mass, hairColor, skinColor, eyeColor, birthYear, gender } = this.state;
 
     return (
       <div className={styles.characterInfo}>
-        name: {name} <br/>
-        height: {height} <br/>
-        mass: {mass} <br/> 
-        hairColor: {hairColor} <br/>
-        skinColor: {skinColor} <br/>
-        eyeColor: {eyeColor} <br/> 
-        birthYear: {birthYear} <br/> 
-        gender: {gender}
+        {canRender ? (
+          <React.Fragment>
+            name: {name} <br/>
+            height: {height} <br/>
+            mass: {mass} <br/> 
+            hairColor: {hairColor} <br/>
+            skinColor: {skinColor} <br/>
+            eyeColor: {eyeColor} <br/> 
+            birthYear: {birthYear} <br/> 
+            gender: {gender}
+          </React.Fragment>
+          ) : <React.Fragment>Loading...</React.Fragment>
+        }
       </div>
     );
   }
