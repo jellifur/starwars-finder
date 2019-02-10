@@ -1,0 +1,13 @@
+{
+  "main.css": "/starwars-finder/static/css/main.7a850290.chunk.css",
+  "main.js": "/starwars-finder/static/js/main.ff9b2dae.chunk.js",
+  "main.js.map": "/starwars-finder/static/js/main.ff9b2dae.chunk.js.map",
+  "static/js/1.e0c98c83.chunk.js": "/starwars-finder/static/js/1.e0c98c83.chunk.js",
+  "static/js/1.e0c98c83.chunk.js.map": "/starwars-finder/static/js/1.e0c98c83.chunk.js.map",
+  "runtime~main.js": "/starwars-finder/static/js/runtime~main.db0ca2a8.js",
+  "runtime~main.js.map": "/starwars-finder/static/js/runtime~main.db0ca2a8.js.map",
+  "static/css/main.7a850290.chunk.css.map": "/starwars-finder/static/css/main.7a850290.chunk.css.map",
+  "index.html": "/starwars-finder/index.html",
+  "precache-manifest.b250c3f339bd4a28902ef25a01a96d83.js": "/starwars-finder/precache-manifest.b250c3f339bd4a28902ef25a01a96d83.js",
+  "service-worker.js": "/starwars-finder/service-worker.js"
+}
