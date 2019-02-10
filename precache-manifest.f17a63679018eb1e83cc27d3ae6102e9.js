@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "df7192fef2e8a30e8429",
+    "revision": "f9051b0501b28d2ba60d",
     "url": "/starwars-finder/static/css/main.4ac00411.chunk.css"
   },
   {
-    "revision": "df7192fef2e8a30e8429",
-    "url": "/starwars-finder/static/js/main.df7192fe.chunk.js"
+    "revision": "f9051b0501b28d2ba60d",
+    "url": "/starwars-finder/static/js/main.f9051b05.chunk.js"
   },
   {
     "revision": "39694cebc0d1b145044b",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/starwars-finder/static/media/search.006b97cd.svg"
   },
   {
-    "revision": "2f23ab6efcd271f2f526bd8d9a07e733",
+    "revision": "cb47a6c125bbcfd4a5d44f1672f46a82",
     "url": "/starwars-finder/index.html"
   }
 ];
