@@ -1,0 +1,64 @@
+.background {
+  width: 100%; height: 230px;
+  background: #000000 url("/assets/space.jpg") no-repeat left top; /*Photo by jaymantri.com from Pexels*/
+  background-size: 100% 250px;
+  position: absolute;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchContainer {
+  width: 800px;
+  min-width: 450px
+}
+
+.searchHeader {
+  color: #000000;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+  width: 100%;
+}
+
+.title {
+  font-weight: 300;
+  margin: 0;
+  padding: 30px 25px 15px 25px;
+}
+
+.appDescription {
+  padding: 0 25px;
+}
+
+.searchBox {
+  padding: 40px 25px;
+}
+
+.characters {
+  padding: 0 17px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.characters::after {
+  content: "";
+  flex: auto;
+}
+
+.navBtn {
+  background-color: #ffffff;
+  border: 1px solid #01133e;
+  font-size: 15px; 
+  cursor: pointer;
+  outline-width: 0;
+  margin: 0 7px;
+}
+
+.navBtns {
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}

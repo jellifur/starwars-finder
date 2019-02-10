@@ -1,0 +1,27 @@
+.searchInput {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 2px solid #01133e;
+  font-size: 14px;
+  width: 100%;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+.searchBtn {
+  background-color: #01133e;
+  border: none;
+  width: 45px; height: 41px;
+  cursor: pointer;
+}
+
+.searchBtn:focus {
+  outline-width: 0;
+}
