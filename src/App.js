@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={SearchCharacters} />
-          <Route path="/character-info/:id" component={CharacterInfo} />
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={SearchCharacters} />
+          <Route path={`${process.env.PUBLIC_URL}/character-info/:id`} component={CharacterInfo} />
         </div>
       </Router>
     );
