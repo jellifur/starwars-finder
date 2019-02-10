@@ -64,7 +64,7 @@ class SearchCharacters extends Component {
             <header className={styles.searchHeader}>
               <h1 className={styles.title}>Star Wars Characters</h1>
               <p className={styles.appDescription}>
-                You can search for any Star Wars character. <br/>
+                You can search for any Star Wars characters. <br/>
                 Lorem ipsum dolor sit amet, consectetur adipiscing. <br/>
                 Sed ut perspiciatis unde omnis iste natus.
               </p>
